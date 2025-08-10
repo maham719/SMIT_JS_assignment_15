@@ -76,7 +76,7 @@ createAccount.addEventListener("click", function (e) {
 
   const existingUser = users.find(user => user.email === email);
   if (existingUser) {
-    alert("This email is already registered.");
+    toastr.warning("email is already registered ")
     return;
   }else{
        toastr.error("user doesn't exist!");
