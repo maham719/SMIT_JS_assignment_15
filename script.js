@@ -66,7 +66,7 @@ createAccount.addEventListener("click", function (e) {
   }
 
   if (password !== confirmPassword) {
-    alert("Passwords do not match.");
+    toastr.error("please fill in all fields");
     return;
   }
 
