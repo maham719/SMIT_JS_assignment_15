@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+
+</head>
+<body>
+    <div class="container home-header">
+            <header><img src="/images/Group 114.png" alt="">    
+                <div class="dropdown">
+                <p class="text-capitalize dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="username">username</p>
+                <ul class="dropdown-menu">
+                    <li > <a href="#" class="dropdown-item" id="Logout"> Logout</a></li>
+                </ul>
+                </div>
+           </header>
+    </div>
+    <div class="container">
+        <div class="row">
+<h1>Quizes:</h1>
+
+           
+<!-- html  -->
+ <div class="row  d-flex">
+     <div class=" col ">
+<div class="card border-danger mb-3 CARD col" >
+  <div class="card-header  text-danger fw-bold">HTML</div>
+  <div class="card-body">
+    <h5 class="card-title">Build the Web’s Foundation!</h5>
+    <p class="card-text">
+      Test your knowledge of HTML tags, attributes, forms, tables, and semantic elements.
+    </p>
+   
+  </div>
+   <button class="btn btn-danger text-white fw-bold " onclick="startQuiz('html')">
+      Start Quiz
+    </button>
+</div>
+ </div>
+<!-- css  -->
+<div class="col">
+<div class="card border-primary mb-3 CARD " >
+  <div class="card-header text-primary  fw-bold">CSS</div>
+  <div class="card-body">
+    <h5 class="card-title">Master the Art of Styling!</h5>
+    <p class="card-text">
+      Test your knowledge of selectors, colors, flexbox, grid, animations, and responsive design.
+    </p>
+    
+  </div>
+  <button class="btn btn-primary text-white fw-bold" onclick="startQuiz('css')">
+      Start Quiz
+    </button>
+</div>
+</div>
+
+<!-- javascript -->
+<div class="col">
+<div class="card border-warning mb-3 CARD col" >
+  <div class="card-header text-warning  fw-bold">JavaScript</div>
+  <div class="card-body">
+    <h5 class="card-title">Test Your JS Skills!</h5>
+    <p class="card-text">
+      Challenge yourself with 30 JavaScript questions covering variables, functions, DOM, ES6, and more.
+    </p>
+  
+  </div>
+    <button class="btn btn-warning text-dark fw-bold" onclick="startQuiz('javascript')">
+      Start Quiz
+    </button>
+</div>
+</div>
+</div>
+        </div>
+        </div>
+    </div>
+    <div class="container resultContainer" id="resultContainer">
+
+      <!-- <h1 class="mb-4">past attempts:</h1>
+      <div class="row">
+        <div class="col ms-auto bg-body-tertiary shadow-lg p-3">
+        <span><h4>Category:</h4><p></p></span>
+        <span><h4>Score:</h4> <p></p></span>
+        <span><h4>Percentage</h4> <p></p></span>
+        <span><h4>Date:</h4> <p></p></span>
+        </div>
+      </div> -->
+
+    </div>
+       <script src="bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+ <script defer>
+document.addEventListener("DOMContentLoaded", function () {
+    const user = JSON.parse(localStorage.getItem("loggedInUser"));
+let pastAttempts = JSON.parse(localStorage.getItem("pastAttempts")) || [];
+  let resultContainer = document.getElementById("resultContainer");
+
+  if (pastAttempts.length > 0) {
+    resultContainer.innerHTML = "<h1 class='mb-4'>Past attempts:</h1>";
+
+    pastAttempts.forEach(attempt => {
+      resultContainer.innerHTML += `
+        <div class="col ms-auto bg-body-tertiary shadow-lg p-3">
+          <span><h4>Category:</h4><p>${attempt.category}</p></span>
+          <span><h4>Score:</h4><p>${attempt.score}</p></span>
+          <span><h4>Percentage:</h4><p>${attempt.percentage}</p></span>
+          <span><h4>Date:</h4><p>${attempt.date}</p></span>
+        </div>
+      `;
+    });
+  }
+    if (!user) {
+        window.location.href = "login.html";
+    }
+});
+
+</script>
+    <script src="script.js"></script>
+</body>
+</html>

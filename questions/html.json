@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What does HTML stand for?",
+    "options": ["Hyperlinks and Text Markup Language", "Home Tool Markup Language", "Hyper Text Markup Language", "Hyper Tool Making Language"],
+    "answer": "Hyper Text Markup Language"
+  },
+  {
+    "question": "Which HTML element is used to define the largest heading?",
+    "options": ["<heading>", "<h1>", "<head>", "<h6>"],
+    "answer": "<h1>"
+  },
+  {
+    "question": "Which tag is used to create a hyperlink in HTML?",
+    "options": ["<link>", "<href>", "<a>", "<hyperlink>"],
+    "answer": "<a>"
+  },
+  {
+    "question": "Which HTML attribute specifies an alternate text for an image?",
+    "options": ["title", "alt", "src", "longdesc"],
+    "answer": "alt"
+  },
+  {
+    "question": "Which HTML tag is used to define an unordered list?",
+    "options": ["<ul>", "<ol>", "<li>", "<list>"],
+    "answer": "<ul>"
+  },
+  {
+    "question": "Which HTML tag is used to define a table row?",
+    "options": ["<td>", "<th>", "<tr>", "<table>"],
+    "answer": "<tr>"
+  },
+  {
+    "question": "Which HTML attribute is used to specify inline CSS styles?",
+    "options": ["style", "class", "css", "font"],
+    "answer": "style"
+  },
+  {
+    "question": "What is the correct HTML element for inserting a line break?",
+    "options": ["<break>", "<br>", "<lb>", "<newline>"],
+    "answer": "<br>"
+  },
+  {
+    "question": "Which HTML tag is used to display a numbered list?",
+    "options": ["<ul>", "<ol>", "<li>", "<list>"],
+    "answer": "<ol>"
+  },
+  {
+    "question": "Which HTML attribute is used to open a link in a new tab?",
+    "options": ["target='_blank'", "window='_new'", "open='_tab'", "tab='new'"],
+    "answer": "target='_blank'"
+  },
+  {
+    "question": "Which HTML tag is used to display bold text?",
+    "options": ["<b>", "<strong>", "<bold>", "<em>"],
+    "answer": "<b>"
+  },
+  {
+    "question": "Which HTML tag is used for italic text?",
+    "options": ["<i>", "<italic>", "<em>", "<it>"],
+    "answer": "<i>"
+  },
+  {
+    "question": "Which tag is used to define a clickable button in HTML?",
+    "options": ["<input type='button'>", "<btn>", "<button>", "<click>"],
+    "answer": "<button>"
+  },
+  {
+    "question": "Which HTML tag is used to define the title of a document?",
+    "options": ["<meta>", "<title>", "<head>", "<header>"],
+    "answer": "<title>"
+  },
+  {
+    "question": "Which HTML tag is used to embed an image?",
+    "options": ["<img>", "<image>", "<pic>", "<src>"],
+    "answer": "<img>"
+  },
+  {
+    "question": "Which HTML element defines emphasized text?",
+    "options": ["<i>", "<em>", "<strong>", "<italic>"],
+    "answer": "<em>"
+  },
+  {
+    "question": "Which HTML tag is used to define the footer of a document?",
+    "options": ["<foot>", "<footer>", "<bottom>", "<end>"],
+    "answer": "<footer>"
+  },
+  {
+    "question": "Which HTML element is used to play audio files?",
+    "options": ["<sound>", "<audio>", "<music>", "<mp3>"],
+    "answer": "<audio>"
+  },
+  {
+    "question": "Which HTML element is used to display a progress bar?",
+    "options": ["<progress>", "<bar>", "<meter>", "<loading>"],
+    "answer": "<progress>"
+  },
+  {
+    "question": "Which HTML element is used to define a navigation menu?",
+    "options": ["<nav>", "<menu>", "<navigation>", "<navbar>"],
+    "answer": "<nav>"
+  },
+  {
+    "question": "Which HTML attribute is used to define unique element IDs?",
+    "options": ["class", "id", "name", "key"],
+    "answer": "id"
+  },
+  {
+    "question": "Which HTML element is used to define a section of a document?",
+    "options": ["<section>", "<div>", "<part>", "<article>"],
+    "answer": "<section>"
+  },
+  {
+    "question": "Which HTML tag is used to define a form?",
+    "options": ["<input>", "<form>", "<fieldset>", "<forms>"],
+    "answer": "<form>"
+  },
+  {
+    "question": "Which HTML input type is used for a slider control?",
+    "options": ["range", "slider", "scroll", "scale"],
+    "answer": "range"
+  },
+  {
+    "question": "Which HTML tag is used for defining a video?",
+    "options": ["<media>", "<movie>", "<video>", "<mp4>"],
+    "answer": "<video>"
+  },
+  {
+    "question": "Which HTML attribute specifies the URL of an image?",
+    "options": ["src", "href", "link", "url"],
+    "answer": "src"
+  },
+  {
+    "question": "Which HTML tag is used to define inline quotations?",
+    "options": ["<quote>", "<q>", "<blockquote>", "<shortquote>"],
+    "answer": "<q>"
+  },
+  {
+    "question": "Which HTML tag is used to define a table cell?",
+    "options": ["<td>", "<th>", "<tr>", "<cell>"],
+    "answer": "<td>"
+  },
+  {
+    "question": "Which HTML tag is used for marking up computer code?",
+    "options": ["<computer>", "<code>", "<pre>", "<script>"],
+    "answer": "<code>"
+  },
+  {
+    "question": "Which HTML element is used to group block elements for styling?",
+    "options": ["<span>", "<group>", "<div>", "<container>"],
+    "answer": "<div>"
+  }
+]

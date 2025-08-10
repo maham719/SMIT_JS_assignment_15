@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What does JavaScript primarily run on?",
+    "options": ["Browser", "Server", "Both Browser and Server", "Database"],
+    "answer": "Both Browser and Server"
+  },
+  {
+    "question": "Which keyword declares a variable in JavaScript?",
+    "options": ["var", "let", "const", "All of the above"],
+    "answer": "All of the above"
+  },
+  {
+    "question": "Which symbol is used for comments in JavaScript?",
+    "options": ["//", "#", "<!-- -->", "/* */"],
+    "answer": "//"
+  },
+  {
+    "question": "Which data type is NOT in JavaScript?",
+    "options": ["String", "Number", "Character", "Boolean"],
+    "answer": "Character"
+  },
+  {
+    "question": "Which method prints output to the console?",
+    "options": ["console.log()", "print()", "log.console()", "output()"],
+    "answer": "console.log()"
+  },
+  {
+    "question": "Which method selects an element by ID?",
+    "options": ["getElementById()", "querySelector()", "getId()", "findElement()"],
+    "answer": "getElementById()"
+  },
+  {
+    "question": "Which operator is used for strict equality?",
+    "options": ["==", "===", "=", "!=="],
+    "answer": "==="
+  },
+  {
+    "question": "Which value means 'no value' in JavaScript?",
+    "options": ["undefined", "null", "empty", "NaN"],
+    "answer": "null"
+  },
+  {
+    "question": "Which function converts a string to an integer?",
+    "options": ["parseInt()", "Number()", "toInt()", "stringToInt()"],
+    "answer": "parseInt()"
+  },
+  {
+    "question": "Which method removes the last element from an array?",
+    "options": ["pop()", "push()", "shift()", "splice()"],
+    "answer": "pop()"
+  },
+  {
+    "question": "Which method adds an element to the end of an array?",
+    "options": ["push()", "pop()", "unshift()", "append()"],
+    "answer": "push()"
+  },
+  {
+    "question": "Which keyword defines a constant variable?",
+    "options": ["const", "var", "let", "final"],
+    "answer": "const"
+  },
+  {
+    "question": "What is 'NaN' in JavaScript?",
+    "options": ["Not a Number", "Negative Number", "Null and None", "Number and Name"],
+    "answer": "Not a Number"
+  },
+  {
+    "question": "Which method joins array elements into a string?",
+    "options": ["join()", "concat()", "toString()", "merge()"],
+    "answer": "join()"
+  },
+  {
+    "question": "Which loop is used to iterate over object properties?",
+    "options": ["for...in", "for...of", "for()", "while()"],
+    "answer": "for...in"
+  },
+  {
+    "question": "Which loop is used to iterate over arrays?",
+    "options": ["for...in", "for...of", "while()", "loop()"],
+    "answer": "for...of"
+  },
+  {
+    "question": "Which method changes JSON string to object?",
+    "options": ["JSON.parse()", "JSON.stringify()", "JSON.object()", "JSON.toObject()"],
+    "answer": "JSON.parse()"
+  },
+  {
+    "question": "Which method changes an object to JSON string?",
+    "options": ["JSON.stringify()", "JSON.parse()", "objectToString()", "JSON.convert()"],
+    "answer": "JSON.stringify()"
+  },
+  {
+    "question": "Which operator is used for logical AND?",
+    "options": ["&&", "AND", "&", "and"],
+    "answer": "&&"
+  },
+  {
+    "question": "Which operator is used for logical OR?",
+    "options": ["||", "OR", "|", "or"],
+    "answer": "||"
+  },
+  {
+    "question": "Which function runs after a set time?",
+    "options": ["setTimeout()", "setInterval()", "delay()", "timeout()"],
+    "answer": "setTimeout()"
+  },
+  {
+    "question": "Which function repeats execution at intervals?",
+    "options": ["setInterval()", "setTimeout()", "repeat()", "loopInterval()"],
+    "answer": "setInterval()"
+  },
+  {
+    "question": "Which keyword is used to exit a loop?",
+    "options": ["break", "stop", "exit", "return"],
+    "answer": "break"
+  },
+  {
+    "question": "Which keyword skips an iteration in loop?",
+    "options": ["continue", "skip", "pass", "next"],
+    "answer": "continue"
+  },
+  {
+    "question": "Which type of scope is created with 'let' and 'const'?",
+    "options": ["Block scope", "Function scope", "Global scope", "Object scope"],
+    "answer": "Block scope"
+  },
+  {
+    "question": "Which keyword defines a function?",
+    "options": ["function", "func", "def", "fn"],
+    "answer": "function"
+  },
+  {
+    "question": "Which array method sorts elements?",
+    "options": ["sort()", "order()", "arrange()", "list()"],
+    "answer": "sort()"
+  },
+  {
+    "question": "Which method returns the length of an array?",
+    "options": ["length", "count()", "size()", "total()"],
+    "answer": "length"
+  },
+  {
+    "question": "Which type of value is 'true' or 'false'?",
+    "options": ["Boolean", "String", "Number", "Condition"],
+    "answer": "Boolean"
+  },
+  {
+    "question": "Which method adds elements to the start of an array?",
+    "options": ["unshift()", "shift()", "push()", "prepend()"],
+    "answer": "unshift()"
+  }
+]

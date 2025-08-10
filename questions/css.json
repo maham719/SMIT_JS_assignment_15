@@ -1,0 +1,152 @@
+[
+  {
+    "question": "What does CSS stand for?",
+    "options": ["Cascading Style Sheets", "Creative Style System", "Colorful Style Syntax", "Computer Style Sheets"],
+    "answer": "Cascading Style Sheets"
+  },
+  {
+    "question": "Which CSS property changes text color?",
+    "options": ["font-color", "color", "text-color", "background-color"],
+    "answer": "color"
+  },
+  {
+    "question": "Which CSS property changes background color?",
+    "options": ["background-color", "color", "bgcolor", "background-style"],
+    "answer": "background-color"
+  },
+  {
+    "question": "Which CSS property changes font size?",
+    "options": ["font-style", "font-size", "text-size", "size"],
+    "answer": "font-size"
+  },
+  {
+    "question": "Which CSS property changes text alignment?",
+    "options": ["text-align", "align-text", "horizontal-align", "alignment"],
+    "answer": "text-align"
+  },
+  {
+    "question": "Which CSS property is used to make text bold?",
+    "options": ["font-weight", "bold", "text-bold", "weight"],
+    "answer": "font-weight"
+  },
+  {
+    "question": "Which CSS property is used to make text italic?",
+    "options": ["font-style", "text-italic", "style", "italic"],
+    "answer": "font-style"
+  },
+  {
+    "question": "Which CSS unit is relative to the font size of the element?",
+    "options": ["em", "px", "%", "vh"],
+    "answer": "em"
+  },
+  {
+    "question": "Which CSS unit is an absolute length?",
+    "options": ["px", "em", "rem", "%"],
+    "answer": "px"
+  },
+  {
+    "question": "Which CSS property adds space inside an element?",
+    "options": ["margin", "padding", "border", "spacing"],
+    "answer": "padding"
+  },
+  {
+    "question": "Which CSS property adds space outside an element?",
+    "options": ["padding", "margin", "spacing", "border"],
+    "answer": "margin"
+  },
+  {
+    "question": "Which CSS property controls the order of flex items?",
+    "options": ["order", "flex-order", "position", "z-index"],
+    "answer": "order"
+  },
+  {
+    "question": "Which CSS property is used for shadow around text?",
+    "options": ["text-shadow", "font-shadow", "shadow-text", "text-effect"],
+    "answer": "text-shadow"
+  },
+  {
+    "question": "Which CSS property is used for shadow around elements?",
+    "options": ["box-shadow", "element-shadow", "shadow", "border-shadow"],
+    "answer": "box-shadow"
+  },
+  {
+    "question": "Which CSS property controls the transparency of an element?",
+    "options": ["opacity", "alpha", "transparent", "visibility"],
+    "answer": "opacity"
+  },
+  {
+    "question": "Which CSS value makes an element invisible but still takes space?",
+    "options": ["display: none", "visibility: hidden", "opacity: 0", "hidden: true"],
+    "answer": "visibility: hidden"
+  },
+  {
+    "question": "Which CSS value removes an element from layout completely?",
+    "options": ["display: none", "visibility: hidden", "opacity: 0", "remove: true"],
+    "answer": "display: none"
+  },
+  {
+    "question": "Which CSS property changes the type of cursor?",
+    "options": ["pointer", "cursor", "mouse", "hover"],
+    "answer": "cursor"
+  },
+  {
+    "question": "Which CSS property sets the space between lines of text?",
+    "options": ["line-height", "spacing", "letter-spacing", "word-spacing"],
+    "answer": "line-height"
+  },
+  {
+    "question": "Which CSS property sets space between letters?",
+    "options": ["letter-spacing", "spacing", "word-spacing", "text-spacing"],
+    "answer": "letter-spacing"
+  },
+  {
+    "question": "Which CSS property sets space between words?",
+    "options": ["word-spacing", "spacing", "letter-spacing", "text-spacing"],
+    "answer": "word-spacing"
+  },
+  {
+    "question": "Which CSS property controls list bullet style?",
+    "options": ["list-style-type", "bullet-type", "list-marker", "list-type"],
+    "answer": "list-style-type"
+  },
+  {
+    "question": "Which CSS property is used for rounded corners?",
+    "options": ["border-radius", "corner-radius", "round-border", "curve"],
+    "answer": "border-radius"
+  },
+  {
+    "question": "Which CSS layout uses rows and columns?",
+    "options": ["grid", "flexbox", "table", "inline-block"],
+    "answer": "grid"
+  },
+  {
+    "question": "Which CSS layout aligns items in one direction?",
+    "options": ["flexbox", "grid", "table", "block"],
+    "answer": "flexbox"
+  },
+  {
+    "question": "Which CSS property specifies animation duration?",
+    "options": ["animation-duration", "animation-time", "duration", "animation-speed"],
+    "answer": "animation-duration"
+  },
+  {
+    "question": "Which CSS property specifies the delay before animation starts?",
+    "options": ["animation-delay", "animation-start", "delay", "transition-delay"],
+    "answer": "animation-delay"
+  },
+  {
+    "question": "Which CSS property controls how an animation repeats?",
+    "options": ["animation-iteration-count", "animation-repeat", "repeat", "animation-loop"],
+    "answer": "animation-iteration-count"
+  },
+  {
+    "question": "Which CSS property changes how an element is positioned?",
+    "options": ["position", "display", "float", "align"],
+    "answer": "position"
+  },
+  {
+    "question": "Which CSS position keeps an element fixed during scroll?",
+    "options": ["fixed", "sticky", "absolute", "relative"],
+    "answer": "fixed"
+  }
+]

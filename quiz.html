@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="bootstrap-5.3.6-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<!-- result modal  -->
+
+<div class="modal fade" id="resultModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg h-100 #modalDialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="/images/Dayflow Abstract 1.png" alt="">
+        <span class="score">
+        <p>your score: </p>
+        <h1 id="score">4</h1>
+        <p>your percentage</p>
+        <h3 id="percentage">90%</h3>
+        </span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="primary-btn" id="complete">complete</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+     <div class="container home-header">
+            <header><img src="/images/Group 114.png" alt="">    
+                <div class="dropdown">
+                <p class="text-capitalize dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="username">username</p>
+                <ul class="dropdown-menu">
+                    <li > <a href="#" class="dropdown-item" id="Logout"> Logout</a></li>
+                </ul>
+                </div>
+           </header>
+    </div>
+
+    <div class="main-container">
+    <div class="container-fluid  text-white p-4  mb-5 question-container" style="height: 150px; background-color: #FCC822;">
+    <p id="questioon" class="fs-3 text-right ms-4 text-center" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officiis tempore recusandae magnam corporis perferendis alias sapiente eligendi expedita fugit.</p>
+    </div>
+    <div class="container options mt-5">
+       <div id="optionA">
+        <p class="A">A.</p>
+        <p>Lorem.</p>
+       </div>
+       <div id="optionB">
+        <p class="B">B.</p>
+        <p>Lorem, ipsum.
+        </p>
+       </div>
+       <div id="optionC">
+        <p class="C">C.</p>
+        <p>Lorem, ipsum.</p>
+       </div>
+       <div id="optionD">
+        <p class="D">D.</p>
+        <p>Lorem.</p>
+       </div>
+       
+    </div>
+
+    <div class="quiz-btns">
+        <button id="prevBtn" class="prev-btn"><i class="ri-arrow-left-s-fill"></i> Previous </button>
+        <span class="timer" id="timer">
+            <p class="time" id="time">30.00</p>
+            <img src="images/Group 130 (1).png" alt=""  >
+        </span>
+        <span>
+        <button id="nextBtn" class="next-btn primary-btn" disabled="true">Next <i class="ri-arrow-right-s-fill"></i></button>
+        <button class="primary-btn" id="finish" data-bs-toggle="modal" data-bs-target="#resultModal">Finish Quiz</button>
+        </span>
+    </div>
+
+    </div>
+     <script src="bootstrap-5.3.6-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+     <script defer>
+document.addEventListener("DOMContentLoaded", function () {
+    // startTimer(60);
+    const user = JSON.parse(localStorage.getItem("loggedInUser"));
+    if (!user) {
+        window.location.href = "login.html";
+    }
+});
+</script>
+</body>
+</html>
