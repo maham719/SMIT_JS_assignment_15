@@ -182,7 +182,7 @@ function loadQuiz(questions) {
   const currentQuestion = questions[currentQuestionIndex];
 
   // Update question text
-  questionElement.textContent = currentQuestion.question;
+  questionElement.textContent = `Q${currentQuestionIndex + 1}: ${currentQuestion.question}`;
 
   // Update options
   optionA.textContent = currentQuestion.options[0];
@@ -200,10 +200,9 @@ nextbtn.addEventListener("click", function () {
     loadQuiz(questions);
   }else if (currentQuestionIndex === questions.length - 1) {
     nextbtn.disabled = true;
- 
-    var answers=localStorage.getItem("loggedInUser.answers");
-
- 
+    nextbtn.style.display="none";
+let finish = document.getElementById("finish");
+    finish.style.display="block";
   }
 });
    var compl=document.getElementById("complete");
@@ -236,9 +235,6 @@ const startTimer = (duration) => {
     if (time <= 0) {
       clearInterval(timer);
       toastr.error("Time's up! Submitting your answers.");
-      // Submit the quiz or show results
-      let loggedInUser = JSON.parse(localStorage.getItem("loggedInUser")) || {};
-      var answers = loggedInUser.answers;
    
     }
     time--;
@@ -337,12 +333,13 @@ finish.addEventListener("click", function () {
         if (!loggedInUser.pastAttempts) {
           loggedInUser.pastAttempts = [];
         }
-
+        let quizattempt=0;
         let newAttempt = {
           category: category,
           date: new Date().toLocaleString(),
           score: correctCount,
-          percentage: percentage
+          percentage: percentage,
+          attempt:quizattempt
         };
 
         loggedInUser.pastAttempts.push(newAttempt);

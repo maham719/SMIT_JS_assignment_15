@@ -271,3 +271,6 @@ header{
 .score h1{
     font-size: 4rem;
 }
+#finish{
+    display: none;
+}
