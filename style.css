@@ -168,9 +168,14 @@ header{
     height: 88vh;
 }
 .question-container{
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.question-container p{
+    font-size: 30px;
+    font-weight: 500;
 }
 .options{
     width: 80%;
@@ -273,4 +278,47 @@ header{
 }
 #finish{
     display: none;
+}
+
+@media screen and (max-width:450px){
+    .options{
+        width: 90%;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 1rem !important;
+    }
+    .options div{
+        margin: auto;
+        width: 300px;
+        height: 50px;
+    }
+    .home-header img{
+        width: 100px;
+    }
+    .timer img{
+    width: 2.7rem;
+}
+.timer p{
+    font-size: 13px;
+}
+.quiz-btns button{
+padding:  0.2rem 1rem;}
+.quiz-btns{
+    margin-top: 2rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+.home-header p{
+    font-size: 14px;
+}
+.question-container{
+    height: 80px;
+}
+#question{
+    font-size: 16px;
+    font-weight: 500;
+}
+.options p{
+    font-size: 0.9rem;
+}
 }
