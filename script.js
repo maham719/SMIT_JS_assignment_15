@@ -174,26 +174,26 @@ fetch(`questions/${category}.json`)
   let currentQuestionIndex = 0;
 
 function loadQuiz(questions) {
-  const questionElement = document.getElementById("questioon");
+  const questionElement = document.getElementById("question");
   const optionA = document.querySelector("#optionA p:last-child");
   const optionB = document.querySelector("#optionB p:last-child");
   const optionC = document.querySelector("#optionC p:last-child");
   const optionD = document.querySelector("#optionD p:last-child");
 
-  // Get the current question object
+
   const currentQuestion = questions[currentQuestionIndex];
 
-  // Update question text
+ 
   questionElement.textContent = `Q${currentQuestionIndex + 1}: ${currentQuestion.question}`;
 
-  // Update options
+
   optionA.textContent = currentQuestion.options[0];
   optionB.textContent = currentQuestion.options[1];
   optionC.textContent = currentQuestion.options[2];
   optionD.textContent = currentQuestion.options[3];
 }
 
-// Buttons
+
 var nextbtn= document.getElementById("nextBtn")
 
 nextbtn.addEventListener("click", function () {
@@ -275,10 +275,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
             
-
-
-            localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
-            
           nextbtn.disabled=false;
         });
     });
@@ -336,6 +332,9 @@ finish.addEventListener("click", function () {
           loggedInUser.pastAttempts = [];
         }
         let quizattempt=0;
+        if (loggedInUser.pastAttempts) {
+          quizattempt = loggedInUser.pastAttempts.length;
+        }
         let newAttempt = {
           category: category,
           date: new Date().toLocaleString(),
