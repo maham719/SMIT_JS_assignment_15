@@ -61,12 +61,12 @@ createAccount.addEventListener("click", function (e) {
 }
 
   if (!name || !email || !password || !confirmPassword) {
-    alert("Please fill in all fields.");
+    toastr.error("please fill in all fileds ");
     return;
   }
 
   if (password !== confirmPassword) {
-    alert("Passwords do not match.");
+    toastr.error("password does not match");
     return;
   }
 
@@ -76,8 +76,10 @@ createAccount.addEventListener("click", function (e) {
 
   const existingUser = users.find(user => user.email === email);
   if (existingUser) {
-    alert("This email is already registered.");
+    toastr.warning("email is already registered ")
     return;
+  }else{
+       toastr.error("user doesn't exist!");
   }
 
   const newUser = {
