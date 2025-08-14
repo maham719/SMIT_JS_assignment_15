@@ -78,8 +78,6 @@ createAccount.addEventListener("click", function (e) {
   if (existingUser) {
     toastr.warning("email is already registered ")
     return;
-  }else{
-       toastr.error("user doesn't exist!");
   }
 
   const newUser = {
@@ -134,6 +132,7 @@ loginbtn.addEventListener("click", function (e) {
 
   let users = JSON.parse(localStorage.getItem("users")) || [];
   const existingUser = users.find(user => user.email === email && user.password === password);
+ const userbyEmail=users.find(user => user.email == email)
   if (existingUser) {
     localStorage.setItem("loggedInUser", JSON.stringify(existingUser));
     toastr.success("Login successful!");
@@ -142,9 +141,15 @@ loginbtn.addEventListener("click", function (e) {
 
       window.location.href = "home.html";
     }, 1000);
-  } else {
-    toastr.error("Invalid email or password");
-  }
+  } 
+     if(!userbyEmail){
+     toastr.error("user doesn't exist")
+          return
+     }
+     if(userbyEmail.password !== password){
+          toastr.error("invalid password");
+          return
+     }
 });
 });
 
